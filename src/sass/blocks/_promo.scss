@@ -1,0 +1,124 @@
+.promo {
+    background-image: url('../img/promo-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 26px;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+    .header {
+        &__menu-list {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__menu-list--item {
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    &__titles {
+        text-align: center;
+        margin-top: 175px;
+    }
+    &__title {
+        font-size: 74px;
+        font-weight: 400;
+        line-height: 90px;
+        color: #212733;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    &__button {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    &__big-menu {
+        background-color: #191A1E;
+        min-height: 100vh;
+        position: absolute;
+        right: -1700px;
+        top: 0;
+        width: 750px;
+        padding: 42px 0 0 80px;
+        transition: all 0.5s ease;
+    }
+
+    &__big-menu.active {
+        right: 0;
+    }
+    &__close-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__big-list {
+        margin-top: 89px;
+    }
+    &__big-list--item {
+        margin-bottom: 40px; 
+        &:last-child{
+            margin-bottom: 170px;
+            a {
+                color: #fff;
+                position: relative;
+                padding-bottom: 15px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 172px;
+                    background-color: #fff;
+                }
+            }
+        }     
+    }
+    &__big-list--link {
+        color: rgba(255,255,255,.3); 
+        transition: all 0.4s ease;
+        &:hover {
+            color: rgba(255,255,255,.6); 
+        }
+    }
+
+    &__big-menu--btn {
+        background: linear-gradient(90deg, #074D88 0%, #61B3C9 100%);
+        color: #fff;
+        &::after {
+            background-image: url('../img/right-arrow-w.svg');
+        }
+    }
+    &__socials-list {
+        display: flex;
+        margin-top: 160px;
+    }
+    &__socials-list--item {
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+

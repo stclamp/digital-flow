@@ -1,0 +1,23 @@
+@import "base/mixins";
+@import "base/variables";
+@import "libs/reset";
+
+* {
+  box-sizing: border-box;
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 1214px;
+  margin: 0 auto;
+}
+
+@import "blocks/btns";
+@import "blocks/promo";
+
