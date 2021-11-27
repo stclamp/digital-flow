@@ -10,14 +10,32 @@
   }
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   width: 1214px;
   margin: 0 auto;
 }
+.socials {
+  &-list {
+    display: flex;
+    margin-top: 160px;
+  }
+  &-list--item {
+    margin-right: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 
 @import "blocks/btns";
 @import "blocks/promo";
+@import "blocks/footer";
 
+@import "blocks/media";

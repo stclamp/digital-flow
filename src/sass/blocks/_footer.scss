@@ -1,0 +1,83 @@
+.footer {
+  background: #17181c;
+  color: #e5e5e5;
+  padding: 103px 0;
+  &__columns {
+    // display: flex;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    padding-bottom: 25px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #595959;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #fff;
+  }
+  &__list {
+    margin-top: 33px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__list-item {
+    margin-bottom: 20px;
+  }
+  &__list-link {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #e5e5e5;
+  }
+  &__list-item--phone,
+  &__list-item--mail,
+  &__list-item--geo {
+    padding-left: 35px;
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background-image: url("../img/phone-call.svg");
+    }
+  }
+  &__list-item--mail {
+    &::after {
+      background-image: url("../img/footer_mail.svg");
+    }
+  }
+  &__list-item--geo {
+    &::after {
+      background-image: url("../img/map.svg");
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    .socials-list {
+      margin-top: 0;
+    }
+  }
+  &__bottom-logo {
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
