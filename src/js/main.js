@@ -1,10 +1,18 @@
 window.addEventListener("DOMContentLoaded", () => {
     // burger
 
-    const openBurgerBtn = document.querySelector('.header__burger-btn');
-    const closeBurgerBtn = document.querySelector('.promo__close-menu');
+    const openBurgerBtn = document.querySelector('.header__burger-btn img');
     const burgerMenu = document.querySelector('.promo__big-menu');
 
-    openBurgerBtn.addEventListener('click', () => burgerMenu.classList.add('active'))
-    closeBurgerBtn.addEventListener('click', () => burgerMenu.classList.remove('active'));
+
+
+    window.addEventListener('click', (e) => {
+        console.log(e.target)
+        if (e.target === openBurgerBtn) {
+            burgerMenu.classList.add('active');
+        } else if (e.target !== burgerMenu) {
+            burgerMenu.classList.remove('active');
+        }
+    })
+
 });
