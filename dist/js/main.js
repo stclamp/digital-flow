@@ -7,7 +7,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     window.addEventListener('click', (e) => {
-        console.log(e.target)
         if (e.target === openBurgerBtn) {
             burgerMenu.classList.add('active');
         } else if (e.target !== burgerMenu) {
@@ -17,13 +16,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //Smooth Scroll
 
-    const smoothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+    const smoothScrollElems = document.querySelectorAll('a[href^="#"]');
     smoothScrollElems.forEach(link => {
         link.addEventListener('click', (event) => {
 
             event.preventDefault();
             const id = link.getAttribute('href').substring(1);
-            
+
 
             document.getElementById(id).scrollIntoView({
                 behavior: 'smooth'
