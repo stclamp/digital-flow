@@ -30,7 +30,7 @@
                 <h4 class="promo__subtitle">Повседневная практика.</h4>
             </div>
             <div class="promo__button">
-                <a href="#" class="btn btn__special">Спец предложение</a>
+                <a href="#special__offers" class="btn btn__special">Спец предложение</a>
             </div>
         </div>
         <div class="promo__big-menu">
@@ -39,11 +39,13 @@
                 <li class="promo__big-list--item"><a href="#" class="promo__big-list--link">Главная</a></li>
                 <li class="promo__big-list--item"><a href="#about" class="promo__big-list--link">О компании</a></li>
                 <li class="promo__big-list--item"><a href="#portfolio" class="promo__big-list--link">Портфолио</a></li>
-                <li class="promo__big-list--item"><a href="#offers" class="promo__big-list--link">Что мы предлагаем</a></li>
-                <li class="promo__big-list--item"><a href="#" class="promo__big-list--link">Специальное предложение</a>
+                <li class="promo__big-list--item"><a href="#offers" class="promo__big-list--link">Что мы предлагаем</a>
+                </li>
+                <li class="promo__big-list--item"><a href="#special__offers" class="promo__big-list--link">Специальное
+                        предложение</a>
                 </li>
             </ul>
-            <a href="" class="btn promo__big-menu--btn">Оставить заявку</a>
+            <a href="#special__form" class="btn promo__big-menu--btn">Оставить заявку</a>
             <div class="socials">
                 <ul class="socials-list">
                     <li class="socials-list--item"><a href="#" class="socials-list--link"><img src="img/telegram.svg"
@@ -112,7 +114,7 @@
                     <div class="offers__each--img">
                         <img src="img/auto.svg" alt="Auto">
                     </div>
-                    <h5 class="offers__each--title">Автоматизируем работу  </h5>
+                    <h5 class="offers__each--title">Автоматизируем работу </h5>
                 </div>
                 <div class="offers__each">
                     <div class="offers__each--img">
@@ -136,7 +138,7 @@
                     <div class="offers__each--img">
                         <img src="img/target.svg" alt="Target">
                     </div>
-                    <h5 class="offers__each--title">Третированная реклама  </h5>
+                    <h5 class="offers__each--title">Третированная реклама </h5>
                 </div>
                 <div class="offers__each">
                     <div class="offers__each--img">
@@ -172,15 +174,68 @@
                 </div>
                 <div class="benefits__each">
                     <img src="img/mobile.svg" alt="Analytics" class="benefits__each--img">
-                    <p class="benefits__each-title">Установим на сайт счетчики аналитики и настроим возможность отслеживать результаты прямо с вашего мобильного телефона</p>
+                    <p class="benefits__each-title">Установим на сайт счетчики аналитики и настроим возможность
+                        отслеживать результаты прямо с вашего мобильного телефона</p>
                 </div>
                 <div class="benefits__each">
                     <img src="img/message.svg" alt="Phones" class="benefits__each--img">
-                    <p class="benefits__each-title">Настроим все возможные способы обратной связи. Заявки на почту, подключим онлайн консультанта, настроим телефонный звон с сайта, подключим Whatsapp к сайту</p>
+                    <p class="benefits__each-title">Настроим все возможные способы обратной связи. Заявки на почту,
+                        подключим онлайн консультанта, настроим телефонный звон с сайта, подключим Whatsapp к сайту</p>
                 </div>
                 <div class="benefits__each">
                     <img src="img/stonks.svg" alt="Сompetitorі" class="benefits__each--img">
-                    <p class="benefits__each-title">Проведем анализ вашей сферы и конкурентов, предложим лучшие инструменты для продвижения в интернете</p>
+                    <p class="benefits__each-title">Проведем анализ вашей сферы и конкурентов, предложим лучшие
+                        инструменты для продвижения в интернете</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="special">
+        <div class="container">
+            <div class="special__form-block" id="special__form">
+                <h2 class="special__form--title">Заявка</h2>
+                <form class="special__form">
+                    <div class="special__form-div">
+                        <label for="name" class="special__form-label">Ваше имя</label>
+                        <input type="text" id="text" name="name" class="special__form--input">
+                    </div>
+                    <div class="special__form-div">
+                        <label for="email" class="special__form-label">Ваш Email</label>
+                        <input type="email" id="email" name="email" class="special__form--input">
+                    </div>
+                    <div class="special__form-div">
+                        <label for="message" class="special__form-label">Сообщение</label>
+                        <input type="text" id="message" name="message"
+                            class="special__form--input special__form--input-high">
+                    </div>
+                    <div class="special__form--button">
+                        <a href="" class="btn special__form--btn">Отправить</a>
+                    </div>
+                </form>
+            </div>
+            <div class="special__offers-block" id="special__offers">
+                <h2 class="special__offers--title">Спец предложения </h2>
+                <div class="special__offers--all">
+                    <div class="special__offers--each">
+                        <div class="circle"></div>
+                        <h5 class="special__each--title">Landing Page</h5>
+                        <p class="special__each--text">продающая посадочная страница. </p>
+                        <span class="special__each--old">150 000 ₸</span>
+                        <span class="special__each--new">150 000 ₸</span>
+                    </div>
+                    <div class="special__offers--each">
+                        <div class="circle"></div>
+                        <h5 class="special__each--title">Бизнес сайт</h5>
+                        <p class="special__each--text">Корпоративный сайт </p>
+                        <span class="special__each--old">150 000 ₸</span>
+                        <span class="special__each--new">150 000 ₸</span>
+                    </div>
+                    <div class="special__offers--each">
+                        <div class="circle"></div>
+                        <h5 class="special__each--title">Контекстная реклама</h5>
+                        <p class="special__each--text">Запуск контекстной рекламы на месяц</p>
+                        <span class="special__each--new">Бесплатно</span>
+                    </div>
                 </div>
             </div>
         </div>
